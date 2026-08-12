@@ -1,0 +1,279 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "2a70cd6e-716b-4844-8bfa-11f97c03ed2b")
+	(paper "A5")
+	(lib_symbols)
+	(polyline
+		(pts
+			(xy 105.41 57.15) (xy 106.68 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71ff7108-07eb-4e3c-8e0a-356ae4cd9546")
+	)
+	(polyline
+		(pts
+			(xy 98.425 53.34) (xy 105.41 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b3c8199-1df5-4444-920d-eeb5344b949f")
+	)
+	(polyline
+		(pts
+			(xy 99.06 59.055) (xy 100.33 59.055)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a05731a1-6ebc-4d4d-9001-c178e5198837")
+	)
+	(polyline
+		(pts
+			(xy 98.425 60.96) (xy 105.41 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0e36e24-8607-4493-b088-6f9fa26a68f1")
+	)
+	(polyline
+		(pts
+			(xy 98.425 53.34) (xy 98.425 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c087c7e7-5bca-476b-8599-c0534939193a")
+	)
+	(polyline
+		(pts
+			(xy 96.52 54.61) (xy 98.425 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca7c73ff-4dd4-40f2-9baf-16223a46a375")
+	)
+	(polyline
+		(pts
+			(xy 96.52 59.69) (xy 98.425 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d034d884-3af4-49d4-8a57-a8b01c0b62b0")
+	)
+	(polyline
+		(pts
+			(xy 99.06 55.245) (xy 100.33 55.245)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d31b6045-570f-4825-bb17-f2e4798168d5")
+	)
+	(polyline
+		(pts
+			(xy 99.695 54.61) (xy 99.695 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d412dfca-abbf-4e18-a405-2908cdeb2d6f")
+	)
+	(sheet
+		(at 90.805 48.26)
+		(size 21.59 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "28947d16-c384-4d87-89da-dd9921994ffa")
+		(property "Sheetname" "AFE"
+			(at 90.805 47.5484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "AFE.kicad_sch"
+			(at 103.378 46.228 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 101.6 48.26 90)
+			(uuid "5a184d5b-99e6-49bf-b401-8b080e9bfa2b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "-5V" input
+			(at 101.6 80.01 270)
+			(uuid "cc316254-70e3-45c8-b5e3-28ba66ae8b83")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "A0" input
+			(at 90.805 77.47 180)
+			(uuid "9b7064da-8283-45c8-bee3-1a7e69019f03")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "A1" input
+			(at 90.805 74.93 180)
+			(uuid "35ad1446-ee9f-4f96-8c6c-c3ed6ce63eea")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "A2" input
+			(at 90.805 72.39 180)
+			(uuid "3805bc5b-7499-44fa-acb0-0bb4b5ddc476")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GND" input
+			(at 105.41 80.01 270)
+			(uuid "3c0689fc-8492-4a46-9ff4-ea0eb1c746be")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IN+" input
+			(at 90.805 54.61 180)
+			(uuid "ff27501c-8c42-462b-8946-bd88715fa011")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "INPUT_OFFSET" input
+			(at 90.805 63.5 180)
+			(uuid "eb12a12d-4e32-466b-9348-31aa7465b01d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OUT" output
+			(at 112.395 57.15 0)
+			(uuid "0d4bd1b2-4a4c-405d-a5c4-6852301a0731")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SCL" input
+			(at 90.805 67.31 180)
+			(uuid "b7acfb98-9bec-4883-81c2-23848a0ca512")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SDA" bidirectional
+			(at 90.805 69.85 180)
+			(uuid "3a9b5af2-ce58-4aaf-b672-02d6ee8272eb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{INT}" output
+			(at 112.395 67.31 0)
+			(uuid "321a4584-f7cb-466c-80db-d730c4a6cd44")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IN-" input
+			(at 90.805 59.69 180)
+			(uuid "173fa08d-5382-4b73-8d5c-b2772cfcf626")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "AFE_BLOCK"
+				(path "/2a70cd6e-716b-4844-8bfa-11f97c03ed2b"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
