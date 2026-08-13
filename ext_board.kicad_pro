@@ -63,11 +63,11 @@
           "hatch_thickness": 1.0,
           "min_clearance": 0.3,
           "min_island_area": 10.0,
-          "min_thickness": 0.25,
-          "pad_connection": 1,
+          "min_thickness": 0.254,
+          "pad_connection": 3,
           "remove_islands": 0,
-          "thermal_relief_gap": 0.2,
-          "thermal_relief_spoke_width": 0.5
+          "thermal_relief_gap": 0.3,
+          "thermal_relief_spoke_width": 0.508
         }
       },
       "diff_pair_dimensions": [
@@ -804,6 +804,7 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -811,8 +812,9 @@
       {
         "name": "Analog",
         "pcb_color": "rgb(0, 255, 0)",
-        "priority": 2,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "priority": 4,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       },
       {
         "bus_width": 12,
@@ -824,9 +826,10 @@
         "microvia_drill": 0.1,
         "name": "DGND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 5,
+        "priority": 7,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -834,14 +837,16 @@
       {
         "name": "Earth",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "priority": 6,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       },
       {
         "name": "GPIOs",
         "pcb_color": "rgb(255, 255, 0)",
-        "priority": 3,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "priority": 5,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       },
       {
         "bus_width": 12,
@@ -853,9 +858,10 @@
         "microvia_drill": 0.1,
         "name": "IBUS",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 6,
+        "priority": 8,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -865,8 +871,9 @@
         "line_style": 0,
         "name": "PDOWNGND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": "",
         "wire_width": 6
       },
       {
@@ -874,13 +881,34 @@
         "line_style": 0,
         "name": "PUPGND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "VDOWN",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": "",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "VUP",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": "",
         "wire_width": 6
       }
     ],
     "meta": {
-      "version": 4
+      "version": 5
     },
     "net_colors": null,
     "netclass_assignments": {
@@ -976,10 +1004,10 @@
         "Analog"
       ],
       "/Current sensor/I+": [
-        "PDOWNGND"
+        "VDOWN"
       ],
       "/Current sensor/I-": [
-        "PDOWNGND"
+        "VDOWN"
       ],
       "/Current sensor/Iout_N": [
         "DGND"
@@ -1008,7 +1036,13 @@
       "/Current sensor3/Iout_P": [
         "Analog"
       ],
+      "/DIS_{DOWN}": [
+        "DGND"
+      ],
       "/DIS_{HV}": [
+        "DGND"
+      ],
+      "/DIS_{UP}": [
         "DGND"
       ],
       "/EN1": [
@@ -1213,26 +1247,22 @@
         "Analog"
       ],
       "/MCU/A": [
-        "DGND",
-        "Earth"
+        "DGND"
       ],
       "/MCU/ADC2_IN5": [
         "DGND"
       ],
       "/MCU/B": [
-        "DGND",
-        "Earth"
+        "DGND"
       ],
       "/MCU/BOOT0": [
         "DGND"
       ],
       "/MCU/CAN_H": [
-        "DGND",
-        "Earth"
+        "DGND"
       ],
       "/MCU/CAN_L": [
-        "DGND",
-        "Earth"
+        "DGND"
       ],
       "/MCU/DAC2": [
         "DGND"
@@ -1250,10 +1280,10 @@
         "DGND"
       ],
       "/MCU/GPIO4_{EXT}": [
-        "Earth"
+        "DGND"
       ],
       "/MCU/HRTIM1_SCIN": [
-        "Earth"
+        "DGND"
       ],
       "/MCU/I_{AC}": [
         "DGND"
@@ -1322,22 +1352,19 @@
         "DGND"
       ],
       "/MCU/Power_EN": [
-        "Earth"
+        "DGND"
       ],
       "/MCU/Relay": [
         "DGND"
       ],
       "/MCU/SHARE+": [
-        "DGND",
-        "Earth"
+        "DGND"
       ],
       "/MCU/SHARE-": [
-        "DGND",
-        "Earth"
+        "DGND"
       ],
       "/MCU/TERM120": [
-        "DGND",
-        "Earth"
+        "DGND"
       ],
       "/MCU/USART3_DE": [
         "DGND"
@@ -1595,7 +1622,7 @@
         "PGND"
       ],
       "/Resistive_bridge6/Raw": [
-        "PUPGND"
+        "VUP"
       ],
       "/SCL_{AFE1}": [
         "I2Cs"
@@ -1720,6 +1747,9 @@
       "/VLow3_{RAW}": [
         "Analog"
       ],
+      "/V_{DOWN}": [
+        "VDOWN"
+      ],
       "/V_{I1Low_sense_DGND}": [
         "DGND"
       ],
@@ -1735,6 +1765,9 @@
       "/V_{IHigh_sense_DGND}": [
         "DGND"
       ],
+      "/V_{UP}": [
+        "VUP"
+      ],
       "/~{STBY1}_DGND": [
         "DGND"
       ],
@@ -1745,12 +1778,10 @@
         "DGND"
       ],
       "DGND": [
-        "DGND",
-        "Earth"
+        "DGND"
       ],
       "Earth_Protective": [
-        "Earth",
-        "PEarth"
+        "Earth"
       ],
       "GND_{LV}": [
         "PGND"
@@ -1963,16 +1994,16 @@
         "DGND"
       ],
       "Net-(J813-Pad11)": [
-        "Earth"
+        "DGND"
       ],
       "Net-(J813-Pad21)": [
-        "Earth"
+        "DGND"
       ],
       "Net-(J813-Pad23)": [
-        "Earth"
+        "DGND"
       ],
       "Net-(J813-Pad9)": [
-        "Earth"
+        "DGND"
       ],
       "Net-(JP201-A)": [
         "DGND"
@@ -2552,7 +2583,7 @@
         "DGND"
       ],
       "unconnected-(J813-Pad10)": [
-        "Earth"
+        "DGND"
       ],
       "unconnected-(J827-Pin_4-Pad4)": [
         "PGND"
@@ -2621,6 +2652,78 @@
         "DGND"
       ],
       "unconnected-(U13-I{slash}O2-Pad3)": [
+        "DGND"
+      ],
+      "unconnected-(U401A-+VBAT-Pad39)": [
+        "DGND"
+      ],
+      "unconnected-(U401A-PA1-Pad30)": [
+        "DGND"
+      ],
+      "unconnected-(U401A-PA5-Pad32)": [
+        "DGND"
+      ],
+      "unconnected-(U401A-PA8-Pad12)": [
+        "DGND"
+      ],
+      "unconnected-(U401A-PA9-Pad14)": [
+        "DGND"
+      ],
+      "unconnected-(U401A-PB0-Pad31)": [
+        "DGND"
+      ],
+      "unconnected-(U401A-PB11-Pad1)": [
+        "DGND"
+      ],
+      "unconnected-(U401A-PB12-Pad2)": [
+        "DGND"
+      ],
+      "unconnected-(U401A-PB13-Pad4)": [
+        "DGND"
+      ],
+      "unconnected-(U401A-PC2-Pad26)": [
+        "DGND"
+      ],
+      "unconnected-(U401A-PC3-Pad27)": [
+        "DGND"
+      ],
+      "unconnected-(U401A-PC6-Pad7)": [
+        "DGND"
+      ],
+      "unconnected-(U401A-PC7-Pad9)": [
+        "DGND"
+      ],
+      "unconnected-(U401A-PC8-Pad10)": [
+        "DGND"
+      ],
+      "unconnected-(U401A-PC9-Pad11)": [
+        "DGND"
+      ],
+      "unconnected-(U401B-PA4-Pad45)": [
+        "DGND"
+      ],
+      "unconnected-(U401B-PA7-Pad44)": [
+        "DGND"
+      ],
+      "unconnected-(U401B-PB10-Pad41)": [
+        "DGND"
+      ],
+      "unconnected-(U401B-PC5-Pad43)": [
+        "DGND"
+      ],
+      "unconnected-(U401C-PA15-Pad48)": [
+        "DGND"
+      ],
+      "unconnected-(U401C-PA2-Pad51)": [
+        "DGND"
+      ],
+      "unconnected-(U401C-PA3-Pad52)": [
+        "DGND"
+      ],
+      "unconnected-(U401C-PB3-Pad50)": [
+        "DGND"
+      ],
+      "unconnected-(U401C-PD2-Pad49)": [
         "DGND"
       ],
       "unconnected-(U402-SHDN-Pad5)": [
@@ -2887,412 +2990,24 @@
     },
     "netclass_patterns": [
       {
-        "netclass": "DGND",
-        "pattern": "+5V_DGND"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "DGND"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "PGND"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "+5V_PGND"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Phase1/SW_Node"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Phase1/fuse"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Phase1/out"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Phase1/gate_H"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Phase1/sink_H"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Phase1/PWM_H"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Phase1/PWM_L"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "+12V_PGND"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Phase1/VDD_SWN"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Phase2/SW_Node"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Phase2/gate_H"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Phase2/sink_H"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Phase2/PWM_H"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Phase2/PWM_L"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Phase2/VDD_SWN"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Phase3/VDD_SWN"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Phase3/PWM_H"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Phase3/SW_Node"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Phase3/fuse"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Phase3/out"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Phase3/gate_H"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Phase3/sink_H"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "+6V"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "+3.3V_DGND"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/Hall_Sensor/HALL3_Z_DGND"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/Hall_Sensor/HALL2_B_DGND"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/Hall_Sensor/HALL1_A_DGND"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/HRTIM_CHA1_DGND"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/HRTIM_CHA2_DGND"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/~{STBY1}_DGND"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/HRTIM_CHC1_DGND"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/HRTIM_CHC2_DGND"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/~{STBY2}_DGND"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/HRTIM_CHE1_DGND"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/HRTIM_CHE2_DGND"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/~{STBY3}_DGND"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/V_{IHigh_sense_DGND}"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/I_{IHigh_sense_DGND}"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/V_{I1Low_sense_DGND}"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/I_{I1Low_sense_DGND}"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/V_{I2Low_sense_DGND}"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/I_{I2Low_sense_DGND}"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/V_{I3Low_sense_DGND}"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/I_{I3Low_sense_DGND}"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/HALL1_A_DGND"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/HALL2_B_DGND"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/HALL3_Z_DGND"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/Temp1"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/Temp2"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/Temp3"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/Neutral"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/Temp2_Mux"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/Temp3_Mux"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/ADC2_IN5"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/SHARE-"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/SHARE+"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/ENCODER_COS"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/ENCODER_SIN"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/FDCAN2_{TX}"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/FDCAN2_{RX}"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/CAN1_STB"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/CAN_L"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/CAN_H"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/A"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/B"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/USART3_RX"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/USART3_TX"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/USART3_DE"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/HRTIM1_SCIN"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/DAC2"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/Temp_x"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/BOOT0"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/PB7"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/PB2"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/PC12"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/HRTIM_CHA2_DGND"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/HRTIM_CHA1_DGND"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/HALL2_B_DGND"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/HALL1_A_DGND"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/PB1"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/I_{IHigh_sense_DGND}"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/V_{IHigh_sense_DGND}"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/I_{I1Low_sense_DGND}"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/V_{I1Low_sense_DGND}"
-      },
-      {
-        "netclass": "DGND",
-        "pattern": "/MCU/PC13"
-      },
-      {
-        "netclass": "IBUS",
-        "pattern": "/Phase_A_PGND"
-      },
-      {
-        "netclass": "IBUS",
-        "pattern": "/Phase_B_PGND"
-      },
-      {
-        "netclass": "IBUS",
-        "pattern": "/Phase_C_PGND"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Phase2/fuse"
-      },
-      {
         "netclass": "Earth",
         "pattern": "Earth_Protective"
       },
       {
-        "netclass": "Default",
-        "pattern": "/Current sensor/I+"
+        "netclass": "PUPGND",
+        "pattern": "PUPGND"
       },
       {
-        "netclass": "Default",
-        "pattern": "/Current sensor1/I+"
+        "netclass": "PDOWNGND",
+        "pattern": "PDOWNGND"
       },
       {
-        "netclass": "Default",
-        "pattern": "/Current sensor2/I+"
+        "netclass": "VUP",
+        "pattern": "VUP"
       },
       {
-        "netclass": "IBUS",
-        "pattern": "/VHigh"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Current sensor/I-"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Current sensor1/I-"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/Current sensor2/I-"
-      },
-      {
-        "netclass": "IBUS",
-        "pattern": "/Current sensor3/I+"
+        "netclass": "VDOWN",
+        "pattern": "VDOWN"
       }
     ]
   },
@@ -3554,7 +3269,7 @@
         "uuid": "8d0c1d66-35ef-4a53-a28f-436a11b54f42"
       }
     ],
-    "used_designators": "N801,F202-205,F401-402,TP1,TP701,TP703-714,TP801-848,JP1-2,JP406,JP410,JP417-418,JP502,L2,L4-5,L504-506,L702-709,L801-806,TR1,TR701-706,TR801-802,Q12,Q603-605,C2,C4,C41,C43,C48-53,C205-240,C301,C401-402,C410-421,C470-471,C491-499,C527,C529-550,C703,C706,C708-711,C713,C717-721,C728-756,C801,C803,C806,C808-811,C813,C817-821,C828-835,C901-903,CBWF801-821,D6-8,D403-404,D508-509,D703-714,D803-808,RGF801-824,U6-14,U205-214,U401-403,U405-408,U490,U506,U702,U704-727,U801-838,U901,AFE1,AFE801-810,R6-7,R11-12,R18-57,R202,R213-287,R401-434,R470-471,R490-492,R494-495,R505,R520-521,R523-528,R710-719,R810-821,R824-859,J4,J6-7,J9-14,J405-406,J801-833,J901-902,K2,K801,TJ801-806,T502-503,#PWR1-10,#PWR14-22,#PWR25-26,#PWR29-30,#PWR34-42,#PWR46,#PWR48-54,#PWR90-101,#PWR103-105,#PWR107-190,#PWR222-247,#PWR301-312,#PWR403,#PWR406,#PWR409-410,#PWR412-413,#PWR416-417,#PWR426-428,#PWR434,#PWR437-468,#PWR509-510,#PWR529,#PWR536,#PWR618-678,#PWR705-706,#PWR708,#PWR712-728,#PWR730-734,#PWR801-884,#PWR901-906,#PWR910-912,CSTAB801-815,H1-6",
+    "used_designators": "N801,F202-205,F401-402,TP1,TP701,TP703-714,TP801-848,JP1-2,JP406,JP410,JP417-418,JP502,L2,L4-5,L504-506,L702-709,L801-806,TR1,TR701-706,TR801-802,Q12,Q603-605,C2,C4,C41,C43,C48-53,C205-240,C301,C401-402,C410-421,C470-471,C491-499,C527,C529-550,C703,C706,C708-711,C713,C717-721,C728-756,C801,C803,C806,C808-811,C813,C817-821,C828-835,C901-903,CBWF801-821,D6-8,D403-404,D508-509,D703-714,D803-808,RGF801-824,U6-14,U205-214,U401-403,U405-408,U490,U506,U702,U704-727,U801-838,U901,AFE1,AFE801-810,R6-7,R11-12,R18-57,R202,R213-287,R401-434,R470-471,R490-492,R494-495,R505,R520-521,R523-528,R710-719,R810-821,R824-859,R909,J4,J6-7,J9-14,J405-406,J801-833,J901-902,K2,K801,TJ801-806,T502-503,#PWR1-10,#PWR14-22,#PWR25-26,#PWR29-30,#PWR34-42,#PWR46,#PWR48-54,#PWR90-101,#PWR103-105,#PWR107-190,#PWR222-247,#PWR301-312,#PWR403,#PWR406,#PWR409-410,#PWR412-413,#PWR416-417,#PWR426-428,#PWR434,#PWR437-468,#PWR509-510,#PWR529,#PWR536,#PWR618-678,#PWR705-706,#PWR708,#PWR712-728,#PWR730-734,#PWR801-884,#PWR901-906,#PWR910-912,CSTAB801-815,H1-6",
     "variants": [
       {
         "name": "TO-252"

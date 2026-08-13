@@ -1808,6 +1808,146 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "R_1"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_1_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "R_2"
 			(pin_numbers
 				(hide yes)
@@ -6666,6 +6806,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 77.47) (xy 142.24 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53c7d1bf-901a-4f8e-bc6c-44063b19759c")
+	)
+	(wire
+		(pts
 			(xy 356.87 87.63) (xy 351.79 87.63)
 		)
 		(stroke
@@ -7273,16 +7423,6 @@
 			(type default)
 		)
 		(uuid "96e26576-adb7-41b8-a5e3-02bbcea04a59")
-	)
-	(wire
-		(pts
-			(xy 100.33 77.47) (xy 85.09 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "972ac163-7d37-40d2-a7ce-38fce7c22006")
 	)
 	(wire
 		(pts
@@ -8153,6 +8293,16 @@
 			(type solid)
 		)
 		(uuid "fc133841-e6d9-4203-a461-3f59c5235da2")
+	)
+	(wire
+		(pts
+			(xy 85.09 77.47) (xy 128.27 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe7f4761-68f3-43d5-9abd-88f7476a9eb4")
 	)
 	(wire
 		(pts
@@ -9106,6 +9256,17 @@
 		)
 		(uuid "4a913ed1-715c-4dd6-9dac-6a91e11e44b0")
 	)
+	(hierarchical_label "DIS_{DOWN}"
+		(shape output)
+		(at 142.24 80.7222 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4b591e62-ef27-4c7b-94a9-7c5447f9d10f")
+	)
 	(hierarchical_label "I1Low_{MCU}"
 		(shape input)
 		(at 91.44 67.31 0)
@@ -9150,6 +9311,17 @@
 		)
 		(uuid "a9d3e51f-54de-48f8-9dab-6003bee99258")
 	)
+	(hierarchical_label "DIS_{UP}"
+		(shape output)
+		(at 142.24 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ead716be-9f2e-43c7-838a-c463b54ba593")
+	)
 	(rule_area
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9170,6 +9342,28 @@
 				(color 0 194 0 0.1019607843)
 			)
 			(uuid "00bfeffb-e2e4-4940-991c-d2bb2ea2ad6e")
+		)
+	)
+	(rule_area
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(polyline
+			(pts
+				(xy 313.69 48.26) (xy 355.6 48.26) (xy 355.6 52.07) (xy 360.68 52.07) (xy 360.68 21.59) (xy 306.07 21.59)
+				(xy 306.07 52.07) (xy 313.69 52.07)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+				(color 0 194 0 1)
+			)
+			(fill
+				(type color)
+				(color 0 194 0 0.1019607843)
+			)
+			(uuid "3d97e438-1ee9-423e-af55-cf830ee7032f")
 		)
 	)
 	(rule_area
@@ -9223,20 +9417,19 @@
 		(dnp no)
 		(polyline
 			(pts
-				(xy 308.61 24.13) (xy 309.88 22.86) (xy 359.41 22.86) (xy 360.68 24.13) (xy 360.68 92.71) (xy 359.41 93.98)
-				(xy 339.09 93.98) (xy 339.09 101.6) (xy 337.82 102.87) (xy 330.2 102.87) (xy 328.93 101.6) (xy 328.93 93.98)
-				(xy 309.88 93.98) (xy 308.61 92.71)
+				(xy 312.42 88.9) (xy 354.33 88.9) (xy 354.33 92.71) (xy 359.41 92.71) (xy 359.41 62.23) (xy 304.8 62.23)
+				(xy 304.8 92.71) (xy 312.42 92.71)
 			)
 			(stroke
 				(width 0)
 				(type dash)
-				(color 194 194 0 1)
+				(color 0 194 0 1)
 			)
 			(fill
 				(type color)
-				(color 194 194 0 0.1019607843)
+				(color 0 194 0 0.1019607843)
 			)
-			(uuid "a1b62e64-7bc9-45df-8c8e-41385be305fc")
+			(uuid "933605a9-d695-4680-ad84-c5ef70f5fcd4")
 		)
 	)
 	(rule_area
@@ -9369,17 +9562,17 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 317.5 93.98 0)
+		(at 308.61 21.59 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "4d69f13a-19f9-4f2c-becf-6ab0f6de1395")
-		(property "Netclass" "Earth"
-			(at 318.1096 91.44 0)
+		(uuid "625d1e22-a383-4bfb-b4c9-2a7c74e21592")
+		(property "Netclass" "DGND"
+			(at 309.2196 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9390,7 +9583,7 @@
 			)
 		)
 		(property "Component Class" ""
-			(at 113.03 74.93 0)
+			(at 53.34 -16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9426,6 +9619,41 @@
 		)
 		(property "Component Class" ""
 			(at 173.99 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 309.88 62.23 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e57bb41c-b828-438b-b2a5-919346056f74")
+		(property "Netclass" "DGND"
+			(at 310.4896 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 54.61 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13386,7 +13614,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "989f243c-103a-4e97-96e4-4d7be0f41349")
-		(property "Reference" "U9"
+		(property "Reference" "U401"
 			(at 68.58 17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13630,7 +13858,7 @@
 		(instances
 			(project "ext_board"
 				(path "/8d0c1d66-35ef-4a53-a28f-436a11b54f42/ebd1a256-23ba-49c1-aa47-71d957e33bb1"
-					(reference "U9")
+					(reference "U401")
 					(unit 1)
 				)
 			)
@@ -14454,7 +14682,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a9762a24-6a58-47d5-9b69-c0db7d38b8e7")
-		(property "Reference" "U9"
+		(property "Reference" "U401"
 			(at 111.76 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14699,7 +14927,7 @@
 		(instances
 			(project "ext_board"
 				(path "/8d0c1d66-35ef-4a53-a28f-436a11b54f42/ebd1a256-23ba-49c1-aa47-71d957e33bb1"
-					(reference "U9")
+					(reference "U401")
 					(unit 3)
 				)
 			)
@@ -15524,7 +15752,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d8c62163-8de6-4200-ae7b-6aebbd8c3b88")
-		(property "Reference" "U9"
+		(property "Reference" "U401"
 			(at 50.8 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15769,7 +15997,7 @@
 		(instances
 			(project "ext_board"
 				(path "/8d0c1d66-35ef-4a53-a28f-436a11b54f42/ebd1a256-23ba-49c1-aa47-71d957e33bb1"
-					(reference "U9")
+					(reference "U401")
 					(unit 2)
 				)
 			)
@@ -16253,6 +16481,98 @@
 		)
 	)
 	(symbol
+		(lib_name "R_1")
+		(lib_id "Device:R")
+		(at 132.08 77.47 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e9f50f21-c9e1-4ec0-b3b3-2933cb8cf4ff")
+		(property "Reference" "R909"
+			(at 132.08 82.804 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "120R"
+			(at 135.636 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Footprints:R_0805_2012Metric"
+			(at 132.08 79.248 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 132.08 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 132.08 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17437"
+			(at 132.08 77.47 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1372838a-c287-408b-b632-b67c3b4c911a")
+		)
+		(pin "2"
+			(uuid "0dfdb411-84e3-47e7-b17c-d634c1ba1761")
+		)
+		(instances
+			(project "ext_board"
+				(path "/8d0c1d66-35ef-4a53-a28f-436a11b54f42/ebd1a256-23ba-49c1-aa47-71d957e33bb1"
+					(reference "R909")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Amplifier_Operational:OPA2277")
 		(at 260.35 185.42 0)
 		(unit 1)
@@ -16541,7 +16861,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f3538ae8-e1e9-4e0b-810a-87f71cc962ba")
-		(property "Reference" "U9"
+		(property "Reference" "U401"
 			(at 50.8 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16786,7 +17106,7 @@
 		(instances
 			(project "ext_board"
 				(path "/8d0c1d66-35ef-4a53-a28f-436a11b54f42/ebd1a256-23ba-49c1-aa47-71d957e33bb1"
-					(reference "U9")
+					(reference "U401")
 					(unit 4)
 				)
 			)

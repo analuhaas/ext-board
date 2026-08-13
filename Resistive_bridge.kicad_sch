@@ -292,6 +292,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "What to do about zone for middle resistances?"
+		(exclude_from_sim no)
+		(at 163.322 62.484 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(color 194 0 0 1)
+			)
+		)
+		(uuid "b46da18a-8413-4b52-872e-5800dd26ab5d")
+	)
 	(junction
 		(at 85.09 85.09)
 		(diameter 0)
@@ -370,16 +381,6 @@
 	)
 	(wire
 		(pts
-			(xy 10.3188 1.9121) (xy 0.1588 1.9121)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "866e1448-0fb5-4e61-8ba8-240e619ff08b")
-	)
-	(wire
-		(pts
 			(xy 85.09 83.82) (xy 85.09 85.09)
 		)
 		(stroke
@@ -417,16 +418,6 @@
 			(type default)
 		)
 		(uuid "fe6f9e84-fb41-4a3b-80bd-2a8b54cd673f")
-	)
-	(label "VLow1_{RAW}"
-		(at 0.1588 1.9121 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "46f5181d-387a-4120-926f-dda78ef61d7f")
 	)
 	(hierarchical_label "out"
 		(shape output)
