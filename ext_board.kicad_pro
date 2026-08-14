@@ -61,10 +61,10 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.3,
+          "min_clearance": 0.15,
           "min_island_area": 10.0,
           "min_thickness": 0.254,
-          "pad_connection": 3,
+          "pad_connection": 2,
           "remove_islands": 0,
           "thermal_relief_gap": 0.3,
           "thermal_relief_spoke_width": 0.508
@@ -792,7 +792,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -810,15 +810,8 @@
         "wire_width": 6
       },
       {
-        "name": "Analog",
-        "pcb_color": "rgb(0, 255, 0)",
-        "priority": 4,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": ""
-      },
-      {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
@@ -826,7 +819,7 @@
         "microvia_drill": 0.1,
         "name": "DGND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 7,
+        "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
         "tuning_profile": "",
@@ -837,34 +830,9 @@
       {
         "name": "Earth",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 6,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": ""
-      },
-      {
-        "name": "GPIOs",
-        "pcb_color": "rgb(255, 255, 0)",
-        "priority": 5,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": ""
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "IBUS",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 8,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "tuning_profile": "",
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
-        "wire_width": 6
       },
       {
         "bus_width": 12,
@@ -2470,8 +2438,17 @@
       "Net-(U802-RT)": [
         "PGND"
       ],
+      "Net-(U802-SEL)": [
+        "DGND"
+      ],
       "Net-(U802-SW)": [
         "PGND"
+      ],
+      "Net-(U802-VB1)": [
+        "DGND"
+      ],
+      "Net-(U802-VB2)": [
+        "DGND"
       ],
       "Net-(U802-VD1)": [
         "DGND"
@@ -2492,6 +2469,15 @@
         "DGND"
       ],
       "Net-(U803-INB)": [
+        "DGND"
+      ],
+      "Net-(U803-SEL)": [
+        "DGND"
+      ],
+      "Net-(U803-VB1)": [
+        "DGND"
+      ],
+      "Net-(U803-VB2)": [
         "DGND"
       ],
       "Net-(U803-VD1)": [
@@ -2679,6 +2665,9 @@
         "DGND"
       ],
       "unconnected-(U401A-PB13-Pad4)": [
+        "DGND"
+      ],
+      "unconnected-(U401A-PB9-Pad21)": [
         "DGND"
       ],
       "unconnected-(U401A-PC2-Pad26)": [
@@ -3269,7 +3258,7 @@
         "uuid": "8d0c1d66-35ef-4a53-a28f-436a11b54f42"
       }
     ],
-    "used_designators": "N801,F202-205,F401-402,TP1,TP701,TP703-714,TP801-848,JP1-2,JP406,JP410,JP417-418,JP502,L2,L4-5,L504-506,L702-709,L801-806,TR1,TR701-706,TR801-802,Q12,Q603-605,C2,C4,C41,C43,C48-53,C205-240,C301,C401-402,C410-421,C470-471,C491-499,C527,C529-550,C703,C706,C708-711,C713,C717-721,C728-756,C801,C803,C806,C808-811,C813,C817-821,C828-835,C901-903,CBWF801-821,D6-8,D403-404,D508-509,D703-714,D803-808,RGF801-824,U6-14,U205-214,U401-403,U405-408,U490,U506,U702,U704-727,U801-838,U901,AFE1,AFE801-810,R6-7,R11-12,R18-57,R202,R213-287,R401-434,R470-471,R490-492,R494-495,R505,R520-521,R523-528,R710-719,R810-821,R824-859,R909,J4,J6-7,J9-14,J405-406,J801-833,J901-902,K2,K801,TJ801-806,T502-503,#PWR1-10,#PWR14-22,#PWR25-26,#PWR29-30,#PWR34-42,#PWR46,#PWR48-54,#PWR90-101,#PWR103-105,#PWR107-190,#PWR222-247,#PWR301-312,#PWR403,#PWR406,#PWR409-410,#PWR412-413,#PWR416-417,#PWR426-428,#PWR434,#PWR437-468,#PWR509-510,#PWR529,#PWR536,#PWR618-678,#PWR705-706,#PWR708,#PWR712-728,#PWR730-734,#PWR801-884,#PWR901-906,#PWR910-912,CSTAB801-815,H1-6",
+    "used_designators": "N101,N801,F202-205,F401-402,TP1,TP701,TP703-714,TP801-848,JP1-2,JP406,JP410,JP417-418,JP502,L2,L4-5,L504-506,L702-709,L801-806,TR1,TR701-706,TR801-802,Q12,Q603-605,C2,C4,C41,C43,C48-53,C205-240,C301,C401-402,C410-421,C470-471,C491-499,C527,C529-550,C703,C706,C708-711,C713,C717-721,C728-756,C801,C803,C806,C808-811,C813,C817-821,C828-835,C901-903,CBWF801-821,D6-8,D403-404,D508-509,D703-714,D803-808,RGF801-824,U6-14,U205-214,U401-403,U405-408,U490,U506,U702,U704-727,U801-838,U901,AFE1,AFE801-810,R6-7,R11-12,R18-57,R202,R213-287,R401-434,R470-471,R490-492,R494-495,R505,R520-521,R523-528,R710-719,R810-821,R824-859,R909,J4,J6-7,J9-14,J405-406,J801-833,J901-902,K2,K801,TJ801-806,T502-503,#PWR1-10,#PWR14-22,#PWR25-26,#PWR29-30,#PWR34-42,#PWR46,#PWR48-54,#PWR90-101,#PWR103-190,#PWR222-247,#PWR301-312,#PWR403,#PWR406,#PWR409-410,#PWR412-413,#PWR416-417,#PWR426-428,#PWR434,#PWR437-468,#PWR509-510,#PWR529,#PWR536,#PWR618-678,#PWR705-706,#PWR708,#PWR712-728,#PWR730-734,#PWR801-884,#PWR901-906,#PWR910-912,CSTAB801-815,H1-6",
     "variants": [
       {
         "name": "TO-252"

@@ -22,22 +22,22 @@
 (rule "IPC2221 B4 Tracks  PUPGND/PDOWNGND"
 	(layer outer)
 	(constraint clearance (min 1.715mm))
-	(condition "A.hasNetclass('PUPGND') && B.hasNetclass('PDOWNGND') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via')")
+	(condition "A.hasNetclass('PUPGND') && B.hasNetclass('PDOWNGND') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via' || B.Type == 'Pad')")
 )
 (rule "IPC2221 B1 Tracks PUPGND/PDOWNGND"
 	(layer inner)
 	(constraint clearance (min 1mm))
-	(condition "A.hasNetclass('PUPGND') && B.hasNetclass('PDOWNGND') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via')")
+	(condition "A.hasNetclass('PUPGND') && B.hasNetclass('PDOWNGND') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via' || B.Type == 'Pad')")
 )
 (rule "IPC2221 B1 Tracks VUP/PDOWNGND"
 	(layer inner)
 	(constraint clearance (min 1mm))
-	(condition "A.hasNetclass('VUP') && B.hasNetclass('PDOWNGND') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via')")
+	(condition "A.hasNetclass('VUP') && B.hasNetclass('PDOWNGND') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via' || B.Type == 'Pad')")
 )
 (rule "IPC2221 B1 Tracks VUP/PUPGND"
 	(layer inner)
 	(constraint clearance (min 1mm))
-	(condition "A.hasNetclass('VUP') && B.hasNetclass('PUPGND') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via')")
+	(condition "A.hasNetclass('VUP') && B.hasNetclass('PUPGND') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via' || B.Type == 'Pad')")
 )
 (rule "60664 DGND/PDOWNGND"
 	(layer outer)
@@ -47,32 +47,32 @@
 (rule "IPC2221 B4 Tracks VUP/PDOWNGND"
 	(layer outer)
 	(constraint clearance (min 1.715mm))
-	(condition "A.hasNetclass('VUP') && B.hasNetclass('PDOWNGND') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via')")
+	(condition "A.hasNetclass('VUP') && B.hasNetclass('PDOWNGND') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via' || B.Type == 'Pad')")
 )
 (rule "IPC2221 B4 Tracks VDOWN/PDOWNGND"
 	(layer outer)
 	(constraint clearance (min 1.715mm))
-	(condition "A.hasNetclass('VDOWN') && B.hasNetclass('PDOWNGND') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via')")
+	(condition "A.hasNetclass('VDOWN') && B.hasNetclass('PDOWNGND') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via' || B.Type == 'Pad')")
 )
 (rule "IPC2221 B4 Tracks VUP/PUPGND"
 	(layer outer)
 	(constraint clearance (min 1.715mm))
-	(condition "A.hasNetclass('VUP') && B.hasNetclass('PUPGND') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via')")
+	(condition "A.hasNetclass('VUP') && B.hasNetclass('PUPGND') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via' || B.Type == 'Pad')")
 )
 (rule "IPC2221 B4 Tracks VDOWN/PUPGND"
 	(layer outer)
 	(constraint clearance (min 1.715mm))
-	(condition "A.hasNetclass('VDOWN') && B.hasNetclass('PUPGND') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via')")
+	(condition "A.hasNetclass('VDOWN') && B.hasNetclass('PUPGND') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via' || B.Type == 'Pad')")
 )
 (rule "IPC2221 B1 Tracks VUP/VDOWN"
 	(layer inner)
 	(constraint clearance (min 1mm))
-	(condition "A.hasNetclass('VUP') && B.hasNetclass('VDOWN') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via')")
+	(condition "A.hasNetclass('VUP') && B.hasNetclass('VDOWN') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via' || B.Type == 'Pad')")
 )
 (rule "IPC2221 B1 Tracks VDOWN/PDOWNGND"
 	(layer inner)
 	(constraint clearance (min 1mm))
-	(condition "A.hasNetclass('VDOWN') && B.hasNetclass('PDOWNGND') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via')")
+	(condition "A.hasNetclass('VDOWN') && B.hasNetclass('PDOWNGND') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via' || B.Type == 'Pad')")
 )
 (rule "60664 VUP/Earth"
 	(layer outer)
@@ -142,7 +142,7 @@
 (rule "IPC2221 B4 Tracks VUP/VDOWN"
 	(layer outer)
 	(constraint clearance (min 1.715mm))
-	(condition "A.hasNetclass('VUP') && B.hasNetclass('VDOWN') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via')")
+	(condition "A.hasNetclass('VUP') && B.hasNetclass('VDOWN') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via' || B.Type == 'Pad')")
 )
 (rule "60664 PUPGND/Earth"
 	(layer outer)
@@ -157,7 +157,7 @@
 (rule "IPC2221 B1 Tracks VDOWN/PUPGND"
 	(layer inner)
 	(constraint clearance (min 1mm))
-	(condition "A.hasNetclass('VDOWN') && B.hasNetclass('PUPGND') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via')")
+	(condition "A.hasNetclass('VDOWN') && B.hasNetclass('PUPGND') && (A.Type == 'Track' || A.Type == 'Zone' || A.Type == 'Via' || A.Type == 'Pad') && (B.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Via' || B.Type == 'Pad')")
 )
 (rule "60664 Outer DGND/PDOWNGND"
 	(layer outer)

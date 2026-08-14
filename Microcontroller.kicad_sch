@@ -1808,146 +1808,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "R_1"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R_1_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "R_2"
 			(pin_numbers
 				(hide yes)
@@ -5871,6 +5731,10 @@
 		(uuid "8d75d526-3019-446d-91f4-fe8c637003b3")
 	)
 	(no_connect
+		(at 85.09 77.47)
+		(uuid "9c17c4bb-1bab-43bc-959a-fef2ec06e2f3")
+	)
+	(no_connect
 		(at 43.18 102.87)
 		(uuid "a67f9744-9a41-49ed-bba7-60b0a65ed034")
 	)
@@ -6803,16 +6667,6 @@
 			(type default)
 		)
 		(uuid "5343f473-8dc4-4aae-afd4-1b1a15051506")
-	)
-	(wire
-		(pts
-			(xy 135.89 77.47) (xy 142.24 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53c7d1bf-901a-4f8e-bc6c-44063b19759c")
 	)
 	(wire
 		(pts
@@ -8296,16 +8150,6 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 77.47) (xy 128.27 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe7f4761-68f3-43d5-9abd-88f7476a9eb4")
-	)
-	(wire
-		(pts
 			(xy 205.74 196.85) (xy 212.09 196.85)
 		)
 		(stroke
@@ -9256,17 +9100,6 @@
 		)
 		(uuid "4a913ed1-715c-4dd6-9dac-6a91e11e44b0")
 	)
-	(hierarchical_label "DIS_{DOWN}"
-		(shape output)
-		(at 142.24 80.7222 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4b591e62-ef27-4c7b-94a9-7c5447f9d10f")
-	)
 	(hierarchical_label "I1Low_{MCU}"
 		(shape input)
 		(at 91.44 67.31 0)
@@ -9310,17 +9143,6 @@
 			(justify left)
 		)
 		(uuid "a9d3e51f-54de-48f8-9dab-6003bee99258")
-	)
-	(hierarchical_label "DIS_{UP}"
-		(shape output)
-		(at 142.24 77.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ead716be-9f2e-43c7-838a-c463b54ba593")
 	)
 	(rule_area
 		(exclude_from_sim no)
@@ -16475,98 +16297,6 @@
 			(project "ext_board"
 				(path "/8d0c1d66-35ef-4a53-a28f-436a11b54f42/ebd1a256-23ba-49c1-aa47-71d957e33bb1"
 					(reference "R401")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "R_1")
-		(lib_id "Device:R")
-		(at 132.08 77.47 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e9f50f21-c9e1-4ec0-b3b3-2933cb8cf4ff")
-		(property "Reference" "R909"
-			(at 132.08 82.804 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "120R"
-			(at 135.636 74.93 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Footprints:R_0805_2012Metric"
-			(at 132.08 79.248 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 132.08 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 132.08 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C17437"
-			(at 132.08 77.47 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1372838a-c287-408b-b632-b67c3b4c911a")
-		)
-		(pin "2"
-			(uuid "0dfdb411-84e3-47e7-b17c-d634c1ba1761")
-		)
-		(instances
-			(project "ext_board"
-				(path "/8d0c1d66-35ef-4a53-a28f-436a11b54f42/ebd1a256-23ba-49c1-aa47-71d957e33bb1"
-					(reference "R909")
 					(unit 1)
 				)
 			)
