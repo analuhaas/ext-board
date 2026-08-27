@@ -8498,16 +8498,6 @@
 		)
 		(uuid "036bde58-d070-48e5-b58b-70cfeb6516e9")
 	)
-	(label "PB9"
-		(at 100.33 77.47 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0798296e-45b6-4bac-b1a4-b77165f4cc9a")
-	)
 	(label "PA14"
 		(at 132.08 99.06 180)
 		(effects
@@ -9100,7 +9090,7 @@
 		)
 		(uuid "4a913ed1-715c-4dd6-9dac-6a91e11e44b0")
 	)
-	(hierarchical_label "I1Low_{MCU}"
+	(hierarchical_label "IAB_{MCU}"
 		(shape input)
 		(at 91.44 67.31 0)
 		(effects
@@ -9122,7 +9112,7 @@
 		)
 		(uuid "5c040269-a2c2-4fb6-a9c1-25b3fd97636e")
 	)
-	(hierarchical_label "V1Low_{MCU}"
+	(hierarchical_label "VUP_{MCU}"
 		(shape input)
 		(at 91.44 69.85 0)
 		(effects
@@ -9133,7 +9123,7 @@
 		)
 		(uuid "a0e92920-b1d8-4550-ba3e-742ed55eb493")
 	)
-	(hierarchical_label "V2Low_{MCU}"
+	(hierarchical_label "VDOWN_{MCU}"
 		(shape input)
 		(at 91.44 57.15 0)
 		(effects

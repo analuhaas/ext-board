@@ -294,7 +294,7 @@
 	)
 	(text "What to do about zone for middle resistances?"
 		(exclude_from_sim no)
-		(at 163.322 62.484 0)
+		(at 198.882 58.674 0)
 		(effects
 			(font
 				(size 3.81 3.81)

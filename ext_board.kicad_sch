@@ -9347,7 +9347,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 151.13) (xy 251.46 151.13)
+			(xy 246.38 146.05) (xy 251.46 146.05)
 		)
 		(stroke
 			(width 0)
@@ -9427,7 +9427,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 148.59) (xy 251.46 148.59)
+			(xy 246.38 151.13) (xy 251.46 151.13)
 		)
 		(stroke
 			(width 0)
@@ -10480,7 +10480,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 156.21) (xy 251.46 156.21)
+			(xy 246.38 148.59) (xy 251.46 148.59)
 		)
 		(stroke
 			(width 0)
@@ -12242,8 +12242,8 @@
 		)
 		(uuid "ffe724d2-9946-468f-ade6-3a41650338d2")
 	)
-	(label "V1UP_{MCU}"
-		(at 246.38 148.59 180)
+	(label "VUP_{MCU}"
+		(at 246.38 151.13 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12252,7 +12252,7 @@
 		)
 		(uuid "01bdddcd-4f86-4ce8-b258-f1ccfb7932c6")
 	)
-	(label "V1DOWN_{RAW}"
+	(label "VDOWN_{RAW}"
 		(at 25.4 82.55 0)
 		(effects
 			(font
@@ -12272,7 +12272,7 @@
 		)
 		(uuid "11a5a8a8-34b3-422c-b6bf-d4ca18a4475a")
 	)
-	(label "V1DOWN_{MCU}"
+	(label "VDOWN_{MCU}"
 		(at 111.76 83.82 180)
 		(effects
 			(font
@@ -12302,7 +12302,7 @@
 		)
 		(uuid "219a6eb9-bffe-466b-bf93-dca0670f0c60")
 	)
-	(label "V1DOWN_{RAW}"
+	(label "VDOWN_{RAW}"
 		(at 259.08 83.82 180)
 		(effects
 			(font
@@ -12332,8 +12332,8 @@
 		)
 		(uuid "434093d6-708d-4e8e-bb1a-193785c2f82b")
 	)
-	(label "I1UP_{MCU}"
-		(at 246.38 151.13 180)
+	(label "IAB_{MCU}"
+		(at 246.38 146.05 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12372,7 +12372,7 @@
 		)
 		(uuid "718f7c69-4b54-4bb5-a4f2-00db0fa362a4")
 	)
-	(label "V1UP_{RAW}"
+	(label "VUP_{RAW}"
 		(at 156.21 83.82 180)
 		(effects
 			(font
@@ -12392,7 +12392,7 @@
 		)
 		(uuid "b2d9b42e-6429-4b01-a3bf-ae2697b9844a")
 	)
-	(label "I1Low_{MCU}"
+	(label "IAB_{MCU}"
 		(at 247.65 16.51 0)
 		(effects
 			(font
@@ -12402,8 +12402,8 @@
 		)
 		(uuid "c6c2c62a-b4bf-4587-a85b-633afc1d5044")
 	)
-	(label "V1DOWN_{MCU}"
-		(at 246.38 156.21 180)
+	(label "VDOWN_{MCU}"
+		(at 246.38 148.59 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12422,7 +12422,7 @@
 		)
 		(uuid "d653da06-5572-492d-b4f9-0dec2d7cff95")
 	)
-	(label "V1UP_{RAW}"
+	(label "VUP_{RAW}"
 		(at 25.4 34.29 0)
 		(effects
 			(font
@@ -12442,7 +12442,7 @@
 		)
 		(uuid "e8888fcf-ccdf-4fab-bcc1-b16af64e1542")
 	)
-	(label "V1UP_{MCU}"
+	(label "VUP_{MCU}"
 		(at 109.22 35.56 180)
 		(effects
 			(font
@@ -23652,36 +23652,6 @@
 				(justify right)
 			)
 		)
-		(pin "I1Low_{MCU}" input
-			(at 251.46 151.13 180)
-			(uuid "7eea0490-d6b6-4a17-a64f-b1fe93600883")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "V1Low_{MCU}" input
-			(at 251.46 148.59 180)
-			(uuid "dfbbaa01-729c-4f6b-af61-dc4f3738eacb")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "V2Low_{MCU}" input
-			(at 251.46 156.21 180)
-			(uuid "90d20c2a-b5bc-4992-b895-17a598e13457")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "Relay" output
 			(at 284.48 140.97 0)
 			(uuid "6b88c309-f103-42d3-bd19-a2b0afd2f180")
@@ -23690,6 +23660,36 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "IAB_{MCU}" input
+			(at 251.46 146.05 180)
+			(uuid "30dfc1ef-9d3e-4032-96b8-a77bea46081e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VDOWN_{MCU}" input
+			(at 251.46 148.59 180)
+			(uuid "609bda30-ec23-4deb-8ce4-963d9a8b430a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VUP_{MCU}" input
+			(at 251.46 151.13 180)
+			(uuid "88ad835c-9563-4366-9bf8-b5c613cc79f6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

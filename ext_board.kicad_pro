@@ -1142,6 +1142,9 @@
       "/I1UP_{MCU}": [
         "DGND"
       ],
+      "/IAB_{MCU}": [
+        "DGND"
+      ],
       "/I_{I1Low_sense_DGND}": [
         "DGND"
       ],
@@ -1703,6 +1706,12 @@
       "/V1UP_{RAW}": [
         "PUPGND"
       ],
+      "/VDOWN_{MCU}": [
+        "DGND"
+      ],
+      "/VDOWN_{RAW}": [
+        "PDOWNGND"
+      ],
       "/VHigh_{RAW}": [
         "Analog"
       ],
@@ -1714,6 +1723,12 @@
       ],
       "/VLow3_{RAW}": [
         "Analog"
+      ],
+      "/VUP_{MCU}": [
+        "DGND"
+      ],
+      "/VUP_{RAW}": [
+        "PUPGND"
       ],
       "/V_{DOWN}": [
         "VDOWN"
