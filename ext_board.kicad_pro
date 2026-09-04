@@ -913,6 +913,9 @@
       "+5V_PGND": [
         "PGND"
       ],
+      "+5V_{DCLEANGND}": [
+        "DGND"
+      ],
       "+5V_{DGND}": [
         "DGND"
       ],
@@ -972,6 +975,7 @@
         "Analog"
       ],
       "/Current sensor/I+": [
+        "PDOWNGND",
         "VDOWN"
       ],
       "/Current sensor/I-": [
@@ -1731,7 +1735,8 @@
         "PUPGND"
       ],
       "/V_{DOWN}": [
-        "VDOWN"
+        "VDOWN",
+        "VUP"
       ],
       "/V_{I1Low_sense_DGND}": [
         "DGND"
@@ -1749,6 +1754,8 @@
         "DGND"
       ],
       "/V_{UP}": [
+        "PUPGND",
+        "VDOWN",
         "VUP"
       ],
       "/~{STBY1}_DGND": [
@@ -1832,6 +1839,9 @@
       "Net-(D10-A)": [
         "PDOWNGND"
       ],
+      "Net-(D10-K)": [
+        "PDOWNGND"
+      ],
       "Net-(D403-A)": [
         "DGND"
       ],
@@ -1890,6 +1900,9 @@
         "PGND"
       ],
       "Net-(D7-A)": [
+        "PUPGND"
+      ],
+      "Net-(D7-K)": [
         "PUPGND"
       ],
       "Net-(D701-A)": [
@@ -2125,6 +2138,18 @@
       ],
       "Net-(TJ806-Pin2)": [
         "PGND"
+      ],
+      "Net-(TR801-AA)": [
+        "DGND"
+      ],
+      "Net-(TR801-AB)": [
+        "DGND"
+      ],
+      "Net-(TR802-AA)": [
+        "DGND"
+      ],
+      "Net-(TR802-AB)": [
+        "DGND"
       ],
       "Net-(U11-SW)": [
         "PUPGND"
@@ -2562,14 +2587,18 @@
         "DGND"
       ],
       "PDOWNGND": [
-        "PDOWNGND"
+        "PDOWNGND",
+        "PUPGND",
+        "VDOWN"
       ],
       "PGND": [
         "GND_HV",
         "PGND"
       ],
       "PUPGND": [
-        "PUPGND"
+        "PDOWNGND",
+        "PUPGND",
+        "VUP"
       ],
       "VRef_DGND": [
         "DGND"
@@ -2648,6 +2677,18 @@
       ],
       "unconnected-(T502-Pad8)": [
         "PGND"
+      ],
+      "unconnected-(TR801-AA-Pad2)": [
+        "DGND"
+      ],
+      "unconnected-(TR801-AB-Pad3)": [
+        "DGND"
+      ],
+      "unconnected-(TR802-AA-Pad2)": [
+        "DGND"
+      ],
+      "unconnected-(TR802-AB-Pad3)": [
+        "DGND"
       ],
       "unconnected-(U13-I{slash}O1-Pad1)": [
         "DGND"
@@ -2787,6 +2828,12 @@
       "unconnected-(U803-NC-Pad7)": [
         "DGND"
       ],
+      "unconnected-(U804-NC-Pad4)": [
+        "PUPGND"
+      ],
+      "unconnected-(U805-NC-Pad4)": [
+        "PDOWNGND"
+      ],
       "unconnected-(U805-SC4-Pad11)": [
         "I2Cs"
       ],
@@ -2810,6 +2857,9 @@
       ],
       "unconnected-(U805-SD7-Pad16)": [
         "I2Cs"
+      ],
+      "unconnected-(U806-NC-Pad4)": [
+        "DGND"
       ],
       "unconnected-(U822-INE-Pad11)": [
         "DGND"
@@ -3273,7 +3323,7 @@
         "uuid": "8d0c1d66-35ef-4a53-a28f-436a11b54f42"
       }
     ],
-    "used_designators": "N101,N801,F202-205,F401-402,TP1,TP701,TP703-714,TP801-848,JP1-2,JP406,JP410,JP417-418,JP502,L2,L4-5,L504-506,L702-709,L801-806,TR1,TR701-706,TR801-802,Q12,Q603-605,C2,C4,C41,C43,C48-53,C205-240,C301,C401-402,C410-421,C470-471,C491-499,C527,C529-550,C703,C706,C708-711,C713,C717-721,C728-756,C801,C803,C806,C808-811,C813,C817-821,C828-835,C901-903,CBWF801-821,D6-8,D403-404,D508-509,D703-714,D803-808,RGF801-824,U6-14,U205-214,U401-403,U405-408,U490,U506,U702,U704-727,U801-838,U901,AFE1,AFE801-810,R6-7,R11-12,R18-57,R202,R213-287,R401-434,R470-471,R490-492,R494-495,R505,R520-521,R523-528,R710-719,R810-821,R824-859,R909,J4,J6-7,J9-14,J405-406,J801-833,J901-902,K2,K801,TJ801-806,T502-503,#PWR1-10,#PWR14-22,#PWR25-26,#PWR29-30,#PWR34-42,#PWR46,#PWR48-54,#PWR90-101,#PWR103-190,#PWR222-247,#PWR301-312,#PWR403,#PWR406,#PWR409-410,#PWR412-413,#PWR416-417,#PWR426-428,#PWR434,#PWR437-468,#PWR509-510,#PWR529,#PWR536,#PWR618-678,#PWR705-706,#PWR708,#PWR712-728,#PWR730-734,#PWR801-884,#PWR901-906,#PWR910-912,CSTAB801-815,H1-6",
+    "used_designators": "N101,N801,F202-205,F401-402,TP1,TP701,TP703-714,TP801-848,JP1-2,JP406,JP410,JP417-418,JP502,L2,L4-5,L504-506,L702-709,L801-806,TR1,TR701-706,TR801-802,Q12,Q603-605,C2,C4,C41,C43,C45-53,C205-240,C301,C401-402,C410-421,C470-471,C491-499,C527,C529-550,C703,C706,C708-711,C713,C717-721,C728-756,C801,C803,C806,C808-811,C813,C817-821,C828-835,C901-903,CBWF801-821,D6-8,D403-404,D508-509,D703-714,D803-808,RGF801-824,U6-14,U205-214,U401-403,U405-408,U490,U506,U702,U704-727,U801-838,U901,AFE1,AFE801-810,R6-7,R11-12,R18-57,R202,R213-287,R401-434,R470-471,R490-492,R494-495,R505,R520-521,R523-528,R710-719,R810-821,R824-859,R909,J4,J6-7,J9-14,J405-406,J801-833,J901-902,K2,K801,TJ801-806,T502-503,#PWR1-10,#PWR14-22,#PWR25-26,#PWR29-30,#PWR34-42,#PWR46,#PWR48-54,#PWR56-57,#PWR90-101,#PWR103-190,#PWR222-247,#PWR301-312,#PWR403,#PWR406,#PWR409-410,#PWR412-413,#PWR416-417,#PWR426-428,#PWR434,#PWR437-468,#PWR509-510,#PWR529,#PWR536,#PWR618-678,#PWR705-706,#PWR708,#PWR712-728,#PWR730-734,#PWR801-884,#PWR901-906,#PWR910-912,CSTAB801-815,H1-6",
     "variants": [
       {
         "name": "TO-252"

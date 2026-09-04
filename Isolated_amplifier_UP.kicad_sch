@@ -1261,7 +1261,7 @@
 				)
 			)
 		)
-		(property "Value" "+5V_{DGND}"
+		(property "Value" "+5V_{DCLEANGND}"
 			(at 154.432 70.866 0)
 			(show_name no)
 			(do_not_autoplace no)
