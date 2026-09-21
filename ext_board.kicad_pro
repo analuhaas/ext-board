@@ -975,7 +975,6 @@
         "Analog"
       ],
       "/Current sensor/I+": [
-        "PDOWNGND",
         "VDOWN"
       ],
       "/Current sensor/I-": [
@@ -1735,8 +1734,7 @@
         "PUPGND"
       ],
       "/V_{DOWN}": [
-        "VDOWN",
-        "VUP"
+        "VDOWN"
       ],
       "/V_{I1Low_sense_DGND}": [
         "DGND"
@@ -1754,8 +1752,6 @@
         "DGND"
       ],
       "/V_{UP}": [
-        "PUPGND",
-        "VDOWN",
         "VUP"
       ],
       "/~{STBY1}_DGND": [
@@ -2587,18 +2583,14 @@
         "DGND"
       ],
       "PDOWNGND": [
-        "PDOWNGND",
-        "PUPGND",
-        "VDOWN"
+        "PDOWNGND"
       ],
       "PGND": [
         "GND_HV",
         "PGND"
       ],
       "PUPGND": [
-        "PDOWNGND",
-        "PUPGND",
-        "VUP"
+        "PUPGND"
       ],
       "VRef_DGND": [
         "DGND"

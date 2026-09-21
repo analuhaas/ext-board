@@ -17178,7 +17178,7 @@
 				)
 			)
 		)
-		(property "Value" "+5V_{DGND}"
+		(property "Value" "+5V_{DCLEANGND}"
 			(at 81.534 21.336 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19439,7 +19439,7 @@
 				)
 			)
 		)
-		(property "Value" "+5V_{DGND}"
+		(property "Value" "+5V_{DCLEANGND}"
 			(at 51.054 51.816 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21927,7 +21927,7 @@
 				)
 			)
 		)
-		(property "Value" "+5V_{DGND}"
+		(property "Value" "+5V_{DCLEANGND}"
 			(at 81.534 69.596 0)
 			(show_name no)
 			(do_not_autoplace no)
