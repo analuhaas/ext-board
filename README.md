@@ -146,11 +146,11 @@ The AMC1311x isolated amplifier is used to isolate the raw measurement of the po
 
 With the guidance of these datasheets indications the placement for both PUPGND/PDOWNGND referenced side was implemented as shown in Figure 27. The resistors where placed to avoid letting different potentials close to each other.
 
-![Figure 27: Placement of the voltage measurement circuit referenced to PUPGND in the layout.](figures/image29.png)
+![Figure 27: Placement of the voltage measurement circuit referenced to PUPGND in the layout.](figures/image28.png)
 
 The analog-front end gets this digital output from the amplifier and adapts it according to user set gain, offset and resolution. The placement of the analog front-end for the 2 voltage measurements and current measurement was kept near the top part of the board as in the module boards developed by WP4, shown in Figure 28.
 
-![Figure 28: Placement of the analog front-end for voltage and current measurements in the layout.](figures/image28.png)
+![Figure 28: Placement of the analog front-end for voltage and current measurements in the layout.](figures/image29.png)
 
 ## Current measurement circuit
 
