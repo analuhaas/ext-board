@@ -9309,7 +9309,7 @@
 		)
 		(uuid "1b2c4196-51a6-466c-b2e4-722803638003")
 	)
-	(text "Assuming 60% efficiency \n52mA @ 12V\n0.624 watts"
+	(text "Assuming 77% efficiency \n48mA @ 12V\n0.576 watts"
 		(exclude_from_sim no)
 		(at 47.498 179.07 0)
 		(effects
@@ -9574,7 +9574,7 @@
 		)
 		(uuid "d6b9d24a-71c9-421d-bc4e-54a3490b3b8d")
 	)
-	(text "Assuming 60% efficiency \n52mA @ 12V\n0.624 watts"
+	(text "Assuming 50% efficiency \n22mA @ 12V\n0.264 watts"
 		(exclude_from_sim no)
 		(at 47.498 129.54 0)
 		(effects
