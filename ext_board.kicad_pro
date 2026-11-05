@@ -2096,6 +2096,18 @@
       "Net-(Q899-S)": [
         "PGND"
       ],
+      "Net-(R259-Pad1)": [
+        "PUPGND"
+      ],
+      "Net-(R259-Pad2)": [
+        "PUPGND"
+      ],
+      "Net-(R260-Pad2)": [
+        "PDOWNGND"
+      ],
+      "Net-(R261-Pad2)": [
+        "PDOWNGND"
+      ],
       "Net-(R401-Pad1)": [
         "DGND"
       ],
@@ -2613,11 +2625,20 @@
       "unconnected-(J813-Pad10)": [
         "DGND"
       ],
+      "unconnected-(J825-~{INT}-Pad8)": [
+        "DGND"
+      ],
+      "unconnected-(J826-~{INT}-Pad8)": [
+        "DGND"
+      ],
       "unconnected-(J827-Pin_4-Pad4)": [
         "PGND"
       ],
       "unconnected-(J827-Pin_5-Pad5)": [
         "PGND"
+      ],
+      "unconnected-(J827-~{INT}-Pad8)": [
+        "DGND"
       ],
       "unconnected-(J828-Pin_4-Pad4)": [
         "PGND"

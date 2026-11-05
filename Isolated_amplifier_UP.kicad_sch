@@ -1165,7 +1165,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\KEM_C1002_X7R_SMD-3316098.pdf"
+		(property "Datasheet" "~"
 			(at 96.52 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -1928,7 +1928,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\KEM_C1002_X7R_SMD-3316098.pdf"
+		(property "Datasheet" "~"
 			(at 149.86 82.55 0)
 			(hide yes)
 			(show_name no)

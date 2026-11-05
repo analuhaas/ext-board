@@ -37,12 +37,7 @@ Finally, the voltage and current measurements are treated by an analog front-end
 
 **Questions left for discussion:**
 
-- **What is the role of the SDA_MCU and SCL_MCU signals?**
-- **Added 4.7 k pull-ups R431/R432 on SCL_MCU/SDA_MCU, taken from the PEBB project. The I²C pull-ups go to 5 V, so need to check if the STM32G474 pins PA13/PA14 are 5 V-tolerant. If not, use 3.3 V?**
-- **The divider is now R280 = 15 k and R281 = 10 k, from PEBB.**
-- **Added a 1 nF ACS724 filter capacitor (C493).**
-- **The current sensor is now the specific ACS724LLCTR-50AB-T part.**
-- **AFE801/802/807: they appear in the BOM with an empty value. Exclude them from the BOM? They have a individual KiCad project?**
+- **Which value to use in R249 and R254?**
 
 ![Figure 5: Voltage divisor for raw voltage acquisition.](figures/image7.png)
 
@@ -75,15 +70,7 @@ The communication RJ45 terminals pins order are modified from latest board versi
 **Questions left for discussion:**
 
 - **A adaptation to communicate with previous board versions is then necessary?**
-- **J813: C2902697 is a single RJ45; the symbol and footprint are a dual RJ45 with LEDs.**
-- **Termination relays RS485 and CAN: replaced the ASSR-1218 (DIP-4) with the GAQY221S (SOP-4). The LED resistors R406/R407 went from 120 Ω to 680 Ω.**
-- **RJ45 LED resistors: R403/R405 went from 3 k to 330 Ω.**
-- **The 120 Ω terminations can never switch on. TERM120 only goes to J813 pin 12, which is an LED pin, and to the LED inputs of U820/U821. No MCU pin drives it. The same applies to Power_EN, Module_{Status} and USB_{STATUS}t. Add this according to PEBB implementation?**
-- **CAN transceiver: replaced the TCAN334GDR (3.3 V part, 5 V absolute maximum) with the CA-IF1051S, which runs from the 5 V supply.**
-- **Leftover symbol for CAN: U402 still uses the TCAN334 symbol (pin names SHDN/STB) and U405 the LTC2850 one. The pinouts match, so this is only cosmetic.**
-- **RS485 transceiver: set to the CA-IF4850HS (3.0–5.5 V supply), replacing the LTC2850 (3.3 V only).**
-- **D403 of Analog: changed to BAS40DB, as in PEBB.**
-- **Changed R401, R406, R407, R410, R412, C401 and C410 footprints to 0603 to match their LCSC parts.**
+- **Adaptation to communicate with 3 different buses**
 
 ![Figure 10: RJ45 terminals pinout.](figures/image12.png)
 
@@ -101,11 +88,6 @@ The TPS7420 linear voltage regulator is used on the output of all +5V feeds to f
 
 **Questions left for discussion:**
 
-- **12 V input: the connectors are now the HC-MX3.0-2*1AW (Micro-Fit compatible) and the fuse is the SMD1210-035-16V.**
-- **Isolated auxiliary supplies: replaced the VPT87DDF01B/CMT88 transformer with the CMT8830U (ratio 1:1.13:1.13).**
-- **Its datasheet recommends it for the CMP6503S, and the higher ratio gives the 5 V LDOs more input voltage.**
-- **D7–D10: the PMEG3010BEA is SOD-323 but the footprint is SOD-323F. The pads are close, but it's worth matching them.**
-- **L5: C3002596 is a CKST0402 with 126 mΩ; the value says 80 mΩ and the footprint is CKCS4020.**
 - **Need to update the notes on consumption of the the supply circuits.**
 
 ![Figure 14: Auxiliary supply for PUPGND referenced components.](figures/image16.png)
@@ -120,30 +102,15 @@ There still some elements that have different datasheets reference (in PEBB too)
 
 **Datasheet referenced does not correspond to the LCSC part:**
 
-- U405 (CA-IF4850HS, C7422579): datasheet points to the LTC2850 (Analog Devices). The symbol is also still the LTC2850xS8.
-- C205, C206, C211, C212, C233, C234, C401, C410, C413, C492 (100nF, C14663 - Yageo CC0603KRX7R9BB104): datasheet is the KEMET C1002 X7R series.
-- C493 (1nF, C1588 - Samsung CL10B102KB8NNNC): datasheet is the KEMET C1002 X7R series.
-- C411, C412 (20pF, C1648 - Samsung CL10C200JB8NNNC): datasheet is the Yageo NP0 general purpose series.
-- R249, R250, R251, R252, R254, R255, R256, R257, R258, R269, R277, R278, R280, R281, R282, R401, R402, R403, R404, R405, R406, R407, R410, R412, R413, R414, R415, R416, R417, R418, R419, R428, R431, R432, R470 (UniOhm 0603WAF/0805W8F parts): datasheet is the Bourns CR series.
-
 **Datasheet not specified:**
 
-- Capacitors: C2, C3, C4, C5, C41, C42, C43, C44, C45, C46, C47, C48, C49, C50, C51, C52, C53
-- Inductors: L2, L3, L5
-- Resistors: R36, R37, R38, R55, R56, R57, R58
-- Connectors: J813 (RJ45 x2), U809 (PwrBlade 51722-10602-0020)
+- Connectors: U809 (PwrBlade 51722-10602-0020)
 
-Mounting holes (H1 to H6), solder jumpers (JP406, JP410, JP417) and the Eurocard rails (N101) do not need a datasheet.
+Passive elements, mounting holes (H1 to H6), solder jumpers (JP406, JP410, JP417) and the eurocard rails (N101) do not need a datasheet.
 
 ## BOM referencing
 
-- C410: the footprint is still 0805, but C14663 is an 0603 part. You changed C401's footprint but not C410's.
-- J813: C2902697 is a single RJ45; the symbol and footprint are a dual RJ45 with LEDs.
-- L5: C3002596 is a CKST0402 with 126 mΩ; the value says 80 mΩ and the footprint is CKCS4020.
 - No LCSC number: R249 and R254 (5.6 k 0805), and U809 (its value is also ~).
-- AFE801/802/807: they appear in the BOM with an empty value. Either exclude them from the BOM like U401, or give them a value.
-- Leftover symbols: U402 still uses the TCAN334 symbol (pin names SHDN/STB) and U405 the LTC2850 one. The pinouts match, so this is only cosmetic.
-- D7–D10: the PMEG3010BEA is SOD-323 but the footprint is SOD-323F. The pads are close, but it's worth matching them.
 
 # KiCad Layout
 

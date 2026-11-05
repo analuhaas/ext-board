@@ -2065,7 +2065,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\KEM_C1002_X7R_SMD-3316098.pdf"
+		(property "Datasheet" "~"
 			(at 64.77 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -2323,7 +2323,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\KEM_C1002_X7R_SMD-3316098.pdf"
+		(property "Datasheet" "~"
 			(at 109.22 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -2580,7 +2580,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\KEM_C1002_X7R_SMD-3316098.pdf"
+		(property "Datasheet" "~"
 			(at 72.39 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -3357,7 +3357,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\KEM_C1002_X7R_SMD-3316098.pdf"
+		(property "Datasheet" "~"
 			(at 167.64 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -3615,7 +3615,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\cr-1858361.pdf"
+		(property "Datasheet" "~"
 			(at 85.09 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -4223,7 +4223,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\cr-1858361.pdf"
+		(property "Datasheet" "~"
 			(at 85.09 54.61 0)
 			(hide yes)
 			(show_name no)

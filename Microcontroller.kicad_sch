@@ -5679,10 +5679,6 @@
 		(uuid "1cf966f7-eef8-415c-8129-34bd53caa861")
 	)
 	(no_connect
-		(at 52.07 36.83)
-		(uuid "217d7687-b4ea-420c-be2b-05251235ccff")
-	)
-	(no_connect
 		(at 85.09 49.53)
 		(uuid "236ff4ca-8f38-4893-a81a-1cb689c58401")
 	)
@@ -5695,16 +5691,8 @@
 		(uuid "3aaee4c4-dbf7-49a5-a620-9465d8cc3ae7")
 	)
 	(no_connect
-		(at 52.07 52.07)
-		(uuid "539f2ffb-5616-4cdc-a050-3190bb4df539")
-	)
-	(no_connect
 		(at 52.07 62.23)
 		(uuid "5c4235d4-93aa-4368-add8-982f941df954")
-	)
-	(no_connect
-		(at 52.07 31.75)
-		(uuid "5ddcc341-277e-47a6-8544-9412e20103c1")
 	)
 	(no_connect
 		(at 85.09 54.61)
@@ -6230,6 +6218,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 52.07) (xy 52.07 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2df38746-2b1f-41ef-bd3c-fa5d7c38b0e2")
+	)
+	(wire
+		(pts
 			(xy 256.54 127) (xy 252.73 127)
 		)
 		(stroke
@@ -6287,6 +6285,16 @@
 			(type solid)
 		)
 		(uuid "3376ae0c-037d-4ace-a452-db6a81c97e40")
+	)
+	(wire
+		(pts
+			(xy 39.37 31.75) (xy 52.07 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "355539d3-56af-4294-a355-cc937d6b0ad9")
 	)
 	(wire
 		(pts
@@ -7550,6 +7558,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 36.83) (xy 52.07 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b99b5161-3ac9-4a83-b868-88729bc04a2f")
+	)
+	(wire
+		(pts
 			(xy 334.01 92.71) (xy 334.01 93.98)
 		)
 		(stroke
@@ -8558,6 +8576,16 @@
 		)
 		(uuid "17d9f40a-c96e-4f83-a829-e0c172cd9dde")
 	)
+	(label "Power_EN"
+		(at 39.37 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "19167304-efa2-45ae-adf3-a80a6290ed49")
+	)
 	(label "HRTIM_SYNC"
 		(at 309.88 44.45 0)
 		(effects
@@ -8767,6 +8795,16 @@
 			(justify left bottom)
 		)
 		(uuid "82e2ac44-5db9-4e8c-8397-c665eaa9e9a2")
+	)
+	(label "USB_{STATUS}"
+		(at 39.37 31.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "846c1694-41fc-4069-977d-c1caa22cb3e3")
 	)
 	(label "DAC2"
 		(at 100.33 44.45 180)
@@ -8978,6 +9016,16 @@
 		)
 		(uuid "dc92c705-f707-46da-bb9c-fd306e36cac5")
 	)
+	(label "Module_{Status}"
+		(at 39.37 36.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dd46974b-9549-4a61-b10c-0abba881ab91")
+	)
 	(label "FDCAN2_{TX}"
 		(at 214.63 124.46 0)
 		(effects
@@ -9151,7 +9199,7 @@
 		(dnp no)
 		(polyline
 			(pts
-				(xy 57.15 16.51) (xy 41.91 31.75) (xy 19.05 31.75) (xy 17.78 33.02) (xy 17.78 119.38) (xy 19.05 120.65)
+				(xy 57.15 16.51) (xy 41.91 29.21) (xy 19.05 29.21) (xy 17.78 30.48) (xy 17.78 119.38) (xy 19.05 120.65)
 				(xy 156.21 120.65) (xy 158.75 118.11) (xy 158.75 17.78) (xy 157.48 16.51)
 			)
 			(stroke
@@ -9530,7 +9578,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\KEM_C1002_X7R_SMD-3316098.pdf"
+		(property "Datasheet" "~"
 			(at 246.38 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -9785,7 +9833,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\cr-1858361.pdf"
+		(property "Datasheet" "~"
 			(at 349.25 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -10040,7 +10088,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\cr-1858361.pdf"
+		(property "Datasheet" "~"
 			(at 349.25 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -10298,7 +10346,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\cr-1858361.pdf"
+		(property "Datasheet" "~"
 			(at 275.59 229.87 0)
 			(hide yes)
 			(show_name no)
@@ -10986,7 +11034,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\KEM_C1002_X7R_SMD-3316098.pdf"
+		(property "Datasheet" "~"
 			(at 250.19 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -11476,7 +11524,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\cr-1858361.pdf"
+		(property "Datasheet" "~"
 			(at 264.16 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -12068,7 +12116,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\UPY_GP_NP0_16V_to_50V_18-1730511.pdf"
+		(property "Datasheet" "~"
 			(at 264.16 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -12402,7 +12450,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "${KIPRJMOD}/datasheet/C2902697_R-RJ45R08P-C205.pdf"
 			(at 334.01 78.105 90)
 			(hide yes)
 			(show_name no)
@@ -12730,7 +12778,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "${KIPRJMOD}/datasheet/C2902697_R-RJ45R08P-C205.pdf"
 			(at 334.01 37.465 90)
 			(hide yes)
 			(show_name no)
@@ -13292,7 +13340,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\cr-1858361.pdf"
+		(property "Datasheet" "~"
 			(at 349.25 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -13782,7 +13830,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/285012fe.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C7422579.pdf"
 			(at 231.14 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -14136,7 +14184,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\cr-1858361.pdf"
+		(property "Datasheet" "~"
 			(at 234.95 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -14668,7 +14716,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\KEM_C1002_X7R_SMD-3316098.pdf"
+		(property "Datasheet" "~"
 			(at 214.63 196.85 0)
 			(hide yes)
 			(show_name no)
@@ -15160,7 +15208,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\cr-1858361.pdf"
+		(property "Datasheet" "~"
 			(at 280.67 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -16677,7 +16725,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\cr-1858361.pdf"
+		(property "Datasheet" "~"
 			(at 275.59 234.95 0)
 			(hide yes)
 			(show_name no)
@@ -16935,7 +16983,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\cr-1858361.pdf"
+		(property "Datasheet" "~"
 			(at 246.38 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -18127,7 +18175,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\cr-1858361.pdf"
+		(property "Datasheet" "~"
 			(at 215.9 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -18890,7 +18938,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\cr-1858361.pdf"
+		(property "Datasheet" "~"
 			(at 265.43 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -19148,7 +19196,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\cr-1858361.pdf"
+		(property "Datasheet" "~"
 			(at 284.48 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -19739,7 +19787,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\cr-1858361.pdf"
+		(property "Datasheet" "~"
 			(at 267.97 243.84 0)
 			(hide yes)
 			(show_name no)
@@ -19997,7 +20045,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\cr-1858361.pdf"
+		(property "Datasheet" "~"
 			(at 256.54 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -20254,7 +20302,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\cr-1858361.pdf"
+		(property "Datasheet" "~"
 			(at 223.52 232.41 0)
 			(hide yes)
 			(show_name no)
@@ -20938,7 +20986,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\MLCC-1837944.pdf"
+		(property "Datasheet" "~"
 			(at 215.9 241.3 0)
 			(hide yes)
 			(show_name no)
@@ -21196,7 +21244,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\cr-1858361.pdf"
+		(property "Datasheet" "~"
 			(at 234.95 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -21451,7 +21499,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\cr-1858361.pdf"
+		(property "Datasheet" "~"
 			(at 349.25 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -21864,7 +21912,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\cr-1858361.pdf"
+		(property "Datasheet" "~"
 			(at 262.89 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -22981,7 +23029,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "${KIPRJMOD}\\datasheet\\UPY_GP_NP0_16V_to_50V_18-1730511.pdf"
+		(property "Datasheet" "~"
 			(at 246.38 210.82 0)
 			(hide yes)
 			(show_name no)
