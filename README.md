@@ -289,35 +289,17 @@ The power circuit composed by relay + current and voltage measurements (see Figu
 
 ### VDOWN to current sensor
 
-Considering MMC module ratings for the CARROTS project, the maximum current is 10 Apeak. Considering this current and the length from VDOWN terminal to the current sensor:
-
-| Current (A) | Conductor length (mm) | Calculated width (mm) |
-|:-------------------------------:|:---------------------:|:---------------------:|
-|10|10|18.7|
-
 Using a copper plane of 17 mm width (Y axis) and 10 mm length (X axis), we do a path between VDOWN terminal and the current sensor as in Figure 32.
 
 ![Figure 32: Power path between VDOWN and I sensor.](figures/image_wiring_VDOWNIsensor.png)
 
 ### Current sensor to relay
 
-Considering the same current and the length from the current sensor to the relay:
-
-| Current (A) | Conductor length (mm) | Calculated width (mm) |
-|:-------------------------------:|:---------------------:|:---------------------:|
-|10|8.45|18.7|
-
 Using a copper plane of 17 mm width (Y axis) and 22 mm length (X axis), we do a path between the current sensor and the relay as in Figure 33.
 
 ![Figure 33: Power path between I sensor and relay.](figures/image_wiring_IsensorRelay.png)
 
 ### Relay to VUP terminal
-
-Considering the same current and the length from the relay to VUP terminal:
-
-| Current (A) | Conductor length (mm) | Calculated width (mm) |
-|:-------------------------------:|:---------------------:|:---------------------:|
-|10|30|18.7|
 
 Using a copper plane of 17 mm width (Y axis) and 45 mm length (X axis), we do a path between the relay and the VUP terminal as in Figure 33.
 
@@ -329,12 +311,12 @@ The path to the voltage measurement voltage divider consumes some current from t
 
 Using that $R = 5 \cdot 0.33 = 1.65 M \Omega$, the current demand would be $I = \frac{800}{1.65\cdot 10^6}=0.485$ mA
 
-Using the calculator again with this current and the lengths between the relay and the voltage dividers:
+Using the calculator again with this current and the lengths between the relay and the voltage dividers. Remark, we consider that the inner copper layer width is 17.5 µm.
 
 | Current (mA) | Conductor length (mm) | Calculated width (um) |
 |:-------------------------------:|:---------------------:|:---------------------:|
-|0.485|72|20.9|
-|0.485|32|20.9|
+|0.485|72|41.9|
+|0.485|32|41.9|
 
 We use 0.5 mm width for safety margin. The resulting wiring for the power circuit is given on Figure 35.
 
@@ -348,8 +330,10 @@ All other signals are wired in the front and bottom layers. The resulting wiring
 
 ## Used vias
 
-**To confirm with Jean which size we can use for the vias of TPS562202**
+According to JLCPCB, the minimum hole diameter of vias for the default configuration is 0.3 mm. The via diameter should be +0.15 mm than the hole size, so 0.45 mm.
+
+We used the via size of 0.3 mm/0.45 mm for thermal dissipation of TPS562202. Other vias are of standard 0.4 mm/0.8 mm size proposed in KiCad.
 
 ## Layers copper thickness
 
-**To confirm with Jean if it is 35 µm or other (according to manufacturer)**
+According to JLCPCB, the default copper thickness for outer layers is 1 oz (= 35 µm) and for inner layers is 0.5 oz (=17.5 µm).
